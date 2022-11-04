@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int[][] arrayBild = {{1,1,0,1},{0,1,0,1},{0,1,1,1},{1,0,1,0}};
+        int[][] arrayBild = {{1,0,0},{0,1,0},{0,0,1},{0,1,0}};
 
         Bild bild = new Bild();
         bild.setArr(arrayBild);
