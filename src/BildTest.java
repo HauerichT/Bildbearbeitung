@@ -9,16 +9,19 @@ public class BildTest {
         Bild bild1 = new Bild();
         Bild bild2 = new Bild();
 
+        // Testszenario 1
         System.out.println("Testbild 1 flipped und inverted:");
         bild1.setArr(testBild1);
-        Bild bild1FlippedAndInverted = bild1.flipAndInvert();
+        bild1.flipAndInvert();
         bild1.ausgabe();
 
+        // Spacer
         System.out.println();
 
+        // Testszenario 1
         System.out.println("Testbild 2 flipped und inverted:");
         bild2.setArr(testBild2);
-        Bild bild2FlippedAndInverted = bild2.flipAndInvert();
+        bild2.flipAndInvert();
         bild2.ausgabe();
     }
 }

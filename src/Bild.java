@@ -3,7 +3,15 @@ public class Bild {
     private int[][] arr;
 
     public void setArr (int[][] arr) {
-        this.arr = arr;
+
+        // prüft, ob leere Arrays übergeben werden
+        if (arr == null || arr.length == 0) {
+            System.out.println("null-Referenz oder ein leeres Array gefunden.");
+            System.exit(0);
+        }
+        else {
+            this.arr = arr;
+        }
     }
 
     public Bild flipAndInvert() {
