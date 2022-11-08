@@ -19,9 +19,8 @@ public class Bild {
             System.out.println("null-Referenz oder ein leeres Array gefunden.");
             System.exit(0);
         }
-        else {
-            this.arr = arr;
-        }
+
+        this.arr = arr;
     }
 
     public Bild flipAndInvert() {
