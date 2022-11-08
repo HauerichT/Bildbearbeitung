@@ -4,8 +4,18 @@ public class Bild {
 
     public void setArr (int[][] arr) {
 
+        // prüft, ob ein binäres Bild übergeben wurde
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] != 0 && arr[i][j] != 1) {
+                    System.out.println("Array enthält kein binäres Bild.");
+                    System.exit(0);
+                }
+            }
+        }
+
         // prüft, ob leere Arrays übergeben werden
-        if (arr == null || arr.length == 0) {
+        if (arr.length == 0) {
             System.out.println("null-Referenz oder ein leeres Array gefunden.");
             System.exit(0);
         }
