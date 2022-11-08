@@ -4,6 +4,12 @@ public class Bild {
 
     public void setArr (int[][] arr) {
 
+        // prüft, ob leere Arrays übergeben werden
+        if (arr.length == 0) {
+            System.out.println("null-Referenz oder ein leeres Array gefunden.");
+            System.exit(0);
+        }
+
         // prüft, ob ein binäres Bild übergeben wurde
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
@@ -12,12 +18,6 @@ public class Bild {
                     System.exit(0);
                 }
             }
-        }
-
-        // prüft, ob leere Arrays übergeben werden
-        if (arr.length == 0) {
-            System.out.println("null-Referenz oder ein leeres Array gefunden.");
-            System.exit(0);
         }
 
         this.arr = arr;
