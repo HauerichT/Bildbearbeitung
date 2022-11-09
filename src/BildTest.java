@@ -18,7 +18,7 @@ public class BildTest {
         // Spacer
         System.out.println();
 
-        // Testszenario 1
+        // Testszenario 2
         System.out.println("Testbild 2 flipped und inverted:");
         bild2.setArr(testBild2);
         bild2.flipAndInvert();

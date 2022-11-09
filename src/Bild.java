@@ -5,7 +5,7 @@ public class Bild {
     public void setArr (int[][] arr) {
 
         // prüft, ob leere Arrays übergeben werden
-        if (arr.length == 0) {
+        if (arr.length == 0 || arr == null) {
             System.out.println("null-Referenz oder ein leeres Array gefunden.");
             System.exit(0);
         }
@@ -23,6 +23,7 @@ public class Bild {
         this.arr = arr;
     }
 
+    // Methode um Werte des Arrays anzupassen und Reihenfolge des Arrays zu tauschen
     public Bild flipAndInvert() {
 
         for (int i = 0; i < arr.length / 2; i++) {
@@ -45,6 +46,7 @@ public class Bild {
         return this;
     }
 
+    // Methode um angepasstes Array auszugeben
     public void ausgabe() {
         for ( int i = 0; i < arr.length; i++ ) {
             for ( int j = 0; j < arr[i].length; j++ ) {
