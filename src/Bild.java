@@ -5,7 +5,7 @@ public class Bild {
     public void setArr (int[][] arr) {
 
         // prüft, ob leere Arrays übergeben werden
-        if (arr.length == 0 || arr == null) {
+        if (arr == null || arr.length == 0) {
             System.out.println("null-Referenz oder ein leeres Array gefunden.");
             System.exit(0);
         }
